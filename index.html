@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--background design-->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <!--game container-->
+    <div class="wrapper">
+      <img
+        id="winkFace"
+        src="https://www.icegif.com/wp-content/uploads/icegif-5550.gif"
+        alt="You guess the number"
+        width="200"
+        height="200"
+      />
+      <img
+        id="noFace"
+        src="https://gifdb.com/images/high/confused-huh-emoji-p43se67kmb5hyld2.webp"
+        alt="No number entered"
+        width="170"
+        height="150"
+      />
+
+      <img
+        id="sadFace"
+        src="https://media.tenor.com/b5nSOwwCL7EAAAAi/emoji-no.gif"
+        alt="Too low"
+        width="200"
+        height="200"
+      />
+
+      <img
+        id="tooHigh"
+        src="https://i.pinimg.com/originals/cc/72/98/cc729819b2f2b26f918c59e83ee565d9.gif"
+        alt="too high"
+        width="200"
+        height="200"
+      />
+
+      <img
+        id="invalid"
+        src="https://media.tenor.com/IwR0CYEo3akAAAAi/oh-no-emoji.gif"
+        alt="invalid number"
+        width="200"
+        height="200"
+      />
+
+      <img
+        id="cryFace"
+        src="https://i.pinimg.com/originals/1a/6d/e3/1a6de3776552e310207ba9be568aff73.gif"
+        alt="looser"
+        width="200"
+        height="200"
+      />
+
+      <div class="secretNumbers"></div>
+
+      <header>Guess the Number between 1 to 20!</header>
+
+      <p class="guess"></p>
+
+      <div class="input-field">
+        <input type="number" />
+        <button>Check</button>
+      </div>
+
+      <p class="label-score">Your score is: <span class="chances">10</span></p>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
